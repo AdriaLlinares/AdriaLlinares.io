@@ -4,6 +4,10 @@ Estoy diseñando esta página web para M04UF1-Programació amb XML y que en un f
 
 [https://adriallinares.github.io/MiPaginaWeb/](https://adriallinares.github.io/MiPaginaWeb/)
 
+## Explicación sobre los campos de formulario que hemos visto en clase.
+
+A continuación tendremos una explicación sobre todos los campos de formulario que hemos visto en clase.
+
 **1.** Este campo permite **ingresar texto libre**. Se utiliza para escribir datos como el **nombre** de una persona.
 
 ```html
@@ -47,9 +51,8 @@ Estoy diseñando esta página web para M04UF1-Programació amb XML y que en un f
 <p><input type="submit"/></p>
 ```
 
-**1.** Este campo permite **ingresar texto libre**. Se utiliza para escribir datos como el **nombre** de una persona.
+**8.** Este campo es una etiqueta que sirve para **redirecionarnos** a qualquier parte de **README.md**.
 
-```html
-<p><label for="campo-nombre">Nombre </label>
-<input type="text" name="nombre" id="campo-nombre" /></p>
-```
+Este es un texto con una nota al pie.[^1]
+
+[^1]: Esta es la explicación o referencia adicional de la nota.
