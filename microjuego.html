@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Adria Llinares Arroyo </title>
-		<link rel="stylesheet" href="estilos.css" />
+        <title>Adria Llinares Arroyo</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <script>
 
+            let num_max = 100;
+            let num_min = 1;
+            let numero = Math.floor(Math.random() * num_max) + num_min; 
+            let contador = 0;
+
+            function comparar_numero() {
+              
+                let my_num_input = document.getElementById("campo-id");
+                let my_num =  my_num_input.value;
+                my_num = Number(my_num);
+                let resultado = document.getElementById("resultado");
+
+
+                if (my_num == "") {
+                    resultado.innerHTML = "<em class=\"error\">Debes introducir un número</em>";
+                    return;
+                }else if (my_num < num_min || my_num > num_max) {
+                    resultado.innerHTML = "<em class=\"error\">El número debe estar entre "+num_min+" y "+num_max+"</em>";
+
+                    return;
+                }
+    
+                contador ++;
+                let field_submit = document.getElementById("field_submit");
+                field_submit.value = "¡Adivina! " +contador+" fallo";
+
+             
+
+                if (my_num > numero) {
+                    resultado.innerHTML = "<em class=\"error\">El número es <strong>menor</strong> que " + my_num + "</em>";
+                    resultado.style.color = "red";
+                } else if (my_num < numero) {
+                     resultado.innerHTML = "<em class=\"error\">El número es <strong>mayor</strong> que " + my_num + "</em>";
+                       resultado.style.color = "red";
+                } else {
+
+                    resultado.innerHTML = "<em class=\"acierto\">¡Has acertado! el numero era "+my_num+"</em>";
+                    resultado.style.color = "green";
+                }
+                my_num_input.value = "";
+                my_num_input.focus();
+
+            }
+        </script>
     </head>
-
+    
     <header>
-	<nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="CV.html">CV</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
-                    <li><a href="contactos.html">Contacto</a></li>
-                    <li><a href="microjuego.html">Micro Juego</a></li>
-                </ul>
-            </nav>
+        <nav class="navegacion-web">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="microjuego.html">Micro Juego</a></li>
+            </ul>
+        </nav>
         <h1>Micro Juego</h1>
-         
     </header>
     
     <body>
         <main>
-			<h2>Este sera el microjuego</h2>
-			<p><label for="numero">Tu numero</label>
-			<input type="number" id="numero" min="0" max="100"></p>
-			<p><input type="submit"/></p>
+            <h2>Adivina el numero que he generado</h2>
+            <p>Este va del numero 1 al numero 100</p>
+            <p id="resultado">Buena suerte</p>
+            <input type="number" id="campo-id" />
+            <input type="button" id="field_submit" value="¡Adivina!" onclick="comparar_numero()">
         </main>
     </body>
 
     <footer>
-
-		<p>© Adria Llinares Arroyo</p>
-		
-		<nav>
-			<ul>
-			
-				<li><a href="index.html">Home</a></li>
-				<li><a href="CV.html">CV</a></li>
-				<li><a href="hobbies.html">Hobbies</a></li>
-				<li><a href="contactos.html">Contacto</a></li>
-				<li><a href="microjuego.html">Micro Juego</a></li>
-			</ul>
-			
-		</nav>
-	</footer>
+        <p>© Adria Llinares Arroyo</p>
+        <nav class="navegacion-web">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="microjuego.html">Micro Juego</a></li>
+            </ul>
+        </nav>
+    </footer>
 </html>

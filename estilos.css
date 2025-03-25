@@ -90,3 +90,10 @@ footer nav ul a:hover {
 label{
 	display:block;
 }
+
+.error{
+	font-style: italic;
+}
+.correcto{
+	font-style: italic;
+}
