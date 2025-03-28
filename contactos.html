@@ -4,29 +4,7 @@
         <title> Adria Llinares Arroyo </title>
 		<link rel="stylesheet" href="estilos.css" />
             </head>
-
-        <script>
-            function validarFormulario() {
-                let nombre = document.getElementById("campo-nombre");
-                let pass = document.getElementById("campo-contraseña");
-                let date = document.getElementById("campo-data");
-                let color = document.getElementById("campo-color");
-                let edad = document.getElementById("campo-edad");
-                
-                // Validar el campo Nombre
-                if (nombre.value == "") {
-                    nombre.classList.add("error-form");
-                }if (pass.value == "") {
-                    pass.classList.add("error-form");
-                }if (date.value == "") {
-                    date.classList.add("error-form");
-                }if (color.value == "") {
-                    color.classList.add("error-form");
-                }if (edad.value == "") {
-                    edad.classList.add("error-form");
-                }
-            }
-        </script>
+            <script type="text/javascript" src="contactos.js"></script>
 		
     </head>
 
@@ -45,6 +23,8 @@
             
     </header>
 <main>
+    </body>
+
 		<h2>Contacto</h2>
         <form>
             <p><label for="campo-nombre">Nombre </label><input type="text" name="nombre" id="campo-nombre" /></p>
@@ -59,9 +39,8 @@
         
                 <p><input type="checkbox" name="subscribe" id="checkbox" /><label for="checkbox">Acepto los términos y condiciones</label></p>
                 
-                <p><input type="button" id="field-submit" value="Enviar!" onclick="validarFormulario()"></p>
-            </form>
-	
+                <p><input type="submit" id="field-submit" value="Enviar!" onclick="validarFormulario()"></p>
+            </form>	
 	</main>
 
     <footer>
@@ -80,4 +59,5 @@
 			
 		</nav>
 	</footer>
+</body>
 </html>

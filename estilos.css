@@ -79,6 +79,7 @@ footer nav ul a {
     padding: 5px;
     color: #64FFDA;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 footer nav ul a:hover {
