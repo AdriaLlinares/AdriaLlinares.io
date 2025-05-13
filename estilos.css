@@ -162,7 +162,7 @@ article a:hover {
 }
 
 /* Sections */
-#hobbies, #estudios {
+#hobbies{
     background-color: #1A1A1A;
     border: 2px solid #1E88E5;
     border-radius: 15px;
@@ -171,20 +171,60 @@ article a:hover {
     width: 60%;
 }
 
-#hobbies h2, #estudios h2 {
+#estudios {
+    background-color: #1A1A1A;
+    border: 2px solid #1E88E5;
+    border-radius: 15px;
+    margin: 40px auto;
+    padding: 30px;
+    width: 60%;
+}
+
+#hobbies h2{
+    font-size: 26px;
+}
+
+#estudios h2 {
     font-size: 26px;
 }
 
 /* Images */
-#selfie, #programacion, #amics, #anime {
+.selfie{
     display: block;
     margin: 20px auto;
     width: 30%;
     border-radius: 10px;
-    transition: transform 0.3s;
+}
+.programacion{
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.amics{
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.anime{
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.5s;
 }
 
-#programacion:hover, #amics:hover, #anime:hover {
+.programacion:hover{
+    transform: scale(1.1);
+}
+
+.amics:hover{
+    transform: scale(1.1);
+}
+.anime:hover{
     transform: scale(1.1);
 }
 
@@ -217,6 +257,7 @@ article a:hover {
 
 /* Buttons */
 #field_submit {
+    margin-top : 20px;
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #1E88E5;
@@ -224,7 +265,7 @@ article a:hover {
     background-color: #1E88E5;
     color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.5s;
 }
 
 #field_submit:hover {
@@ -258,4 +299,3 @@ article a:hover {
 .correcto-form {
     background-color: rgba(76, 175, 80, 0.2);
 }
-

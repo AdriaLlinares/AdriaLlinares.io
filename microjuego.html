@@ -23,10 +23,14 @@
             <h2>Adivina el número que he generado</h2>
             <p>Este va del número 1 al número 100</p>
             <p><output id="resultado">Buena suerte</output></p>
-
+            
+            <!-- Barra de progreso de intentos -->
+            <p><label for="intentos">Intentos:</label> <progress id="intentos" value="0" max="10"></progress></p>
+            
             <input type="number" id="campo-id" />
             <input type="submit" id="field_submit" value="¡Adivina!" onclick="comparar_numero()">
         </main>
+
 
         <footer>
             <p>© Adria Llinares Arroyo</p>
