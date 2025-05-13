@@ -2,7 +2,7 @@
 
 Estoy diseñando esta página web para M04UF1-Programació amb XML y que en un futuro puede llegar a ser mi portfolio.
 
-[https://adriallinares.github.io/MiPaginaWeb/](https://adriallinares.github.io/MiPaginaWeb/)
+[https://adriallinares.github.io/](https://adriallinares.github.io/)
 
 ## Explicación sobre los campos de formulario que hemos visto en clase.
 
